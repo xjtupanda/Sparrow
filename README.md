@@ -3,7 +3,7 @@
 *We proposed a data augmentation method to enrich the instruction diversity of video data, which facilitates more efficient training without compromising performance.*
 
 ## :sparkles: Highlights
-:rocket: **Train less, achieve more:** By mixing in our synthetic data, one can achieve comparable or better performance, while the total sample size is only **15%**.
+:rocket: **Train less, achieve more:** By mixing in our synthetic data, one can achieve comparable or better performance, while the total training sample size is only **15%**.
 |  | Video-MME | MVBench | TempCompass |
 |---|---|---|---|
 | MiniCPM-V-2.5-8B<br><sub>zero-shot</sub> | 48.2 | 42.9 | 49.1 |

@@ -1,6 +1,6 @@
-# T2Vid
+# T2Vid: Efficient Video Finetuning Scheme for MLLMs
 
-*A data augmentation method to enrich the instruction diversity for finetuning Video-LLMs.*
+*We proposed a data augmentation method to enrich the instruction diversity of video data, which facilitates more efficient training without compromising performance.*
 
 ## :sparkles: Highlights
 :rocket: **Train less, achieve more:** Mixing in our data, one can achieve comparable or better performance, while the total sample size is only **15%**.

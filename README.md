@@ -44,7 +44,7 @@ pip install -U flash-attn --no-build-isolation
 ```
 
 ## Training & Evaluation
-The instructions on training and evaluation (including pre-trained weights) are in [TRAIN.md](docs/TRAIN.md) and [EVAL.md](docs/EVAL.md), respectively.
+The instructions on training and evaluation (including pre-trained weights) are in [TRAIN.md](docs/TRAIN.md) and [EVAL.md](docs/EVAL.md).
 
 ## Misc
 For those interested in:

@@ -1,6 +1,9 @@
 # T2Vid: Efficient Video Finetuning Scheme for MLLMs
+<p align="center">
+        🤗 <a href="https://huggingface.co/datasets/xjtupanda/T2Vid-Synthetic">Dataset</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/pdf/2409.12191">Paper</a> &nbsp&nbsp  </a>
+</p>
 
-*We proposed a data augmentation method to enrich the instruction diversity of video data, which facilitates more efficient training without compromising performance.*
+**TL;DR:** *We proposed a data augmentation method to enrich the instruction diversity of video data, which facilitates more efficient training without compromising performance.*
 
 ## :sparkles: Highlights
 :rocket: **Train less, achieve more:** By mixing in our synthetic data, one can achieve comparable or better performance, while the total training sample size is only **15%**.

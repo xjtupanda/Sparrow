@@ -1,6 +1,6 @@
 # T2Vid: Efficient Video Finetuning Scheme for MLLMs
 <p align="center">
-        🤗 <a href="https://huggingface.co/datasets/xjtupanda/T2Vid-Synthetic">Dataset</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/pdf/2409.12191">Paper</a> &nbsp&nbsp  </a>
+        🤗 <a href="https://huggingface.co/datasets/xjtupanda/T2Vid-Synthetic">Dataset</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/pdf/24xx.xxxxx">Paper</a> &nbsp&nbsp  </a>
 </p>
 
 **TL;DR:** *We proposed a data augmentation method to enrich the instruction diversity of video data, which facilitates more efficient training without compromising performance.*
@@ -44,12 +44,21 @@ pip install -U flash-attn --no-build-isolation
 ```
 
 ## Training & Evaluation
-The instructions on training and evaluation are in [TRAIN.md](docs/TRAIN.md) and [EVAL.md](docs/EVAL.md), respectively.
+The instructions on training and evaluation (including pre-trained weights) are in [TRAIN.md](docs/TRAIN.md) and [EVAL.md](docs/EVAL.md), respectively.
 
 ## Misc
 For those interested in:
 - How to translate text into images? Check `utils/draw_text_multi_image_multi_proc.py`
 - How to visualize instruction distribution? Check `utils/draw_text_multi_image_multi_proc.py`
+
+
+## 🙌 Related Projects
+* [Video-MME](https://github.com/BradyFU/Video-MME): A comprehensive video benchmark that we mainly use in our study.
+* [Awesome-MLLM](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models): A project keeping track of new papers and the latest developments in the field of MLLMs.
+
+## 🌻 Acknowledgement
+- Great open-sourced MLLMs and code: [MiniCPM-V](https://github.com/OpenBMB/MiniCPM-V), [Idefics3](https://huggingface.co/HuggingFaceM4/Idefics3-8B-Llama3), [InternVL](https://github.com/OpenGVLab/InternVL).
+- Long text instruction data: [LongAlpaca](https://huggingface.co/datasets/Yukang/LongAlpaca-12k) and [LongQLoRA](https://huggingface.co/datasets/YeungNLP/LongQLoRA-Dataset).
 
 ## 🖋️ Citation
 

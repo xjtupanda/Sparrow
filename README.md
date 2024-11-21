@@ -28,7 +28,7 @@
     <img src="./assets/idea-illustration.png" width="75%" height="75%">
 </p>
 
-## Quick Setup
+## 🛠️ Quick Setup
 
 1. Create a conda virtual environment and install the required packages.
 
@@ -43,10 +43,10 @@ pip install -r requirements.txt
 pip install -U flash-attn --no-build-isolation
 ```
 
-## Training & Evaluation
-The instructions on training and evaluation (including pre-trained weights) are in [TRAIN.md](docs/TRAIN.md) and [EVAL.md](docs/EVAL.md).
+## 💡 Training & Evaluation
+The instructions on training and evaluation (*including pre-trained weights*) are in [TRAIN.md](docs/TRAIN.md) and [EVAL.md](docs/EVAL.md).
 
-## Misc
+## 📖 Misc
 For those interested in:
 - How to translate text into images? Check `utils/draw_text_multi_image_multi_proc.py`
 - How to visualize instruction distribution? Check `utils/draw_text_multi_image_multi_proc.py`

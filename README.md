@@ -1,6 +1,12 @@
 # T2Vid: Efficient Video Finetuning Scheme for MLLMs
+
+
 <p align="center">
-        🤗 <a href="https://huggingface.co/datasets/xjtupanda/T2Vid-Synthetic">Dataset</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/pdf/24xx.xxxxx">Paper</a> &nbsp&nbsp  </a>
+    <img src="./assets/icon.png" width="300"/>
+<p>
+
+<p align="center">
+        🤗 <a href="https://huggingface.co/collections/xjtupanda/t2vid-673f104cdaf4ac3340b15964">Hugging Face</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/pdf/24xx.xxxxx">Paper</a> &nbsp&nbsp  </a>
 </p>
 
 **TL;DR:** *We proposed a data augmentation method to enrich the instruction diversity of video data, which facilitates more efficient training without compromising performance.*

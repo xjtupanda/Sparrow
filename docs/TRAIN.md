@@ -49,6 +49,20 @@ We adopt the multi-image format of MiniCPM-V:
 
 We also provide a simple script of [format conversion](https://github.com/xjtupanda/T2Vid/blob/main/utils/preprocess/reformat_json.py) for reference.
 
+<details>
+  <summary>
+    <b>Notice:</b> For synthetic data we do not perform frame downsampling and use all the images.
+  </summary>
+
+
+Considering compute efficiency, we filtered out data samples by pre-computing and limiting the frame numbers & total context length:
+
+- For MiniCPM-V:  Check [minicpm-filter.py](https://github.com/xjtupanda/T2Vid/blob/main/utils/preprocess/minicpm-filter.py)
+- For Idefics3: Check [idefics-filter.py](https://github.com/xjtupanda/T2Vid/blob/main/utils/preprocess/idefics-filter.py)
+
+
+</details>
+
 
 ## Training
 

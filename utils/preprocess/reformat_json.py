@@ -41,7 +41,7 @@ def write_json(path, data):
         json.dump(data, f, indent=4, ensure_ascii=False)
 
 base_dir = "/data/pandayin/data/video_data/extracted_frames"
-json_data = read_jsonl("video-chatgpt-clean.jsonl")
+json_data = read_jsonl("video-chatgpt.jsonl")
 
 NUM_FRAMES=24
 new_data = []

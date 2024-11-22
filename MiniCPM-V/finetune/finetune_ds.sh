@@ -24,7 +24,7 @@ DIR=`pwd`
 MODEL="openbmb/MiniCPM-Llama3-V-2_5"
 # ATTENTION: specify the path to your training data, which should be a json file consisting of a list of conversations.
 # See the section for finetuning in README for more information.
-DATA="/data/pandayin/data/minicpm-mix-data-denser-text-30k.json"
+DATA="/data/pandayin/data/minicpm-mix-data-30k.json"
 LLM_TYPE="llama3" # if use openbmb/MiniCPM-V-2, please set LLM_TYPE=minicpm, if use openbmb/MiniCPM-Llama3-V-2_5, please set LLM_TYPE="llama3"
 MODEL_MAX_Length=8666
 

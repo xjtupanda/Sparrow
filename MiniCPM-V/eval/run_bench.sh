@@ -15,7 +15,6 @@ LOG=${OUTPUT_DIR}/multi-bench-evaluation_log.txt
 > "$LOG"
 exec &> >(tee -a "$LOG")
 
-bash yt_video_inference.sh ${CKPT} ${CKPT_FILE} ${NUM_FRAMES}
+bash video-mme.sh ${CKPT} ${CKPT_FILE} ${NUM_FRAMES}
 bash mvbench.sh ${CKPT} ${CKPT_FILE} ${NUM_FRAMES}
 bash temp-compass.sh ${CKPT} ${CKPT_FILE} ${NUM_FRAMES}
-bash vcgbench.sh ${CKPT} ${CKPT_FILE}

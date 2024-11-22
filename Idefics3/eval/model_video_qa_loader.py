@@ -54,8 +54,8 @@ def get_seq_frames(total_num_frames, desired_num_frames):
     return seq
 
 def load_video_from_file(video_path, num_frames=24):
-    # input : xxx.mp4
-    # output: a list of numpy array, each item corresponds to a frame.
+    # input : video file like "xxx.mp4"
+    # output: a list of PIL images, each item corresponds to a frame.
     
     cv2_vr = cv2.VideoCapture(video_path)
     duration = int(cv2_vr.get(cv2.CAP_PROP_FRAME_COUNT))
@@ -68,7 +68,6 @@ def load_video_from_file(video_path, num_frames=24):
         if not success:
             break
         if count in selected_frame_ids:
-            # frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             image = Image.fromarray(cv2.cvtColor(frame,cv2.COLOR_BGR2RGB))
             video_data.append(image)
         count += 1
@@ -79,7 +78,7 @@ def load_video_from_file(video_path, num_frames=24):
 
 def load_video_from_dir(video_path, num_frames=24):
     # input : a dir that contains xxx.jpg/png
-    # output: a list of Image array.
+    # output: a list of PIL images.
     frame_list = sorted(glob(os.path.join(video_path, '*')))
     duration = len(frame_list)
     assert duration > 0, f"unavailable video_path: {video_path}"

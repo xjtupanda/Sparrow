@@ -9,7 +9,7 @@ CKPT=$1
 CKPTFILE=$2
 OUTPUT_DIR="bench_results/${CKPT}"
 
-BASE_DIR="/data/pandayin/benchmarks/mvbench"
+BASE_DIR="../../benchmarks/mvbench"
 
 
 NUM_FRAMES=24

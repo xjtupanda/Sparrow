@@ -24,7 +24,7 @@ from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 
 @dataclass
 class ModelArguments:
-    model_name_or_path: Optional[str] = field(default="HuggingFaceM4/idefics2-8b")
+    model_name_or_path: Optional[str] = field(default="HuggingFaceM4/Idefics3-8B-Llama3")
 
 
 @dataclass

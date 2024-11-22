@@ -54,8 +54,8 @@ The instructions on training and evaluation (*including pre-trained weights*) ar
 
 ## 📖  Misc
 For those interested in:
-- How to translate text into images? Check `utils/draw_text_multi_image_multi_proc.py`
-- How to visualize instruction distribution? Check `utils/draw_text_multi_image_multi_proc.py`
+- How to translate text into images? Check `utils/text-to-images/draw_text_multi_image_multi_proc.py`
+- How to visualize the distribution of instructions? Check `utils/draw_text_multi_image_multi_proc.py`
 
 
 ## 🙌 Related Projects

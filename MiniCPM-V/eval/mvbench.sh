@@ -9,10 +9,8 @@ CKPT=$1
 CKPTFILE=$2
 OUTPUT_DIR="bench_results/${CKPT}"
 
-BASE_DIR="/data/pandayin/benchmarks/mvbench"
+BASE_DIR="../../benchmarks/mvbench"
 
-
-#"/data/pandayin/MiniCPM-V/finetune/output/full-video-finetune-tune-vision/" #"/data/pandayin/ckpt/MiniCPM-Llama3-V-2_5/"
 NUM_FRAMES=$3
 
 

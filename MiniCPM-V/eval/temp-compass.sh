@@ -8,12 +8,8 @@ CKPT=$1
 CKPTFILE=$2
 OUTPUT_DIR="bench_results/${CKPT}"
 
-BASE_DIR="/data/pandayin/benchmarks/TempCompass"
+BASE_DIR="../../benchmarks/TempCompass"
 
-
-#"/data/pandayin/MiniCPM-V/finetune/output/mix-data-few-samples-30k-finetune-tune-vision"
-#"/data/pandayin/MiniCPM-V/finetune/output/full-video-finetune-tune-vision"
-#"/data/pandayin/ckpt/MiniCPM-Llama3-V-2_5"
 NUM_FRAMES=$3
 
 
@@ -26,7 +22,7 @@ exec &> >(tee -a "$LOG")
 for IDX in $(seq 0 $((CHUNKS-1))); do
     CUDA_VISIBLE_DEVICES=${GPULIST[$IDX]} python -m model_video_qa_loader \
         --model-path $CKPTFILE \
-        --question-file ${BASE_DIR}/TempCompass-multi-choice.jsonl \
+        --question-file ${BASE_DIR}/TempCompass.jsonl \
         --video-folder ${BASE_DIR} \
         --num-frames ${NUM_FRAMES} \
         --answers-file ${BASE_DIR}/answers/$CKPT/${CHUNKS}_${IDX}.jsonl \

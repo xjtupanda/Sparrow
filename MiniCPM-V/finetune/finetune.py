@@ -22,7 +22,7 @@ from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 
 @dataclass
 class ModelArguments:
-    model_name_or_path: Optional[str] = field(default="openbmb/MiniCPM-V-2")
+    model_name_or_path: Optional[str] = field(default="openbmb/MiniCPM-Llama3-V-2_5")
 
 
 @dataclass

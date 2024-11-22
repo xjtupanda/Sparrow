@@ -22,7 +22,7 @@ export CUDA_DEVICE_MAX_CONNECTIONS=1
 DIR=`pwd`
 
 MODEL="HuggingFaceM4/Idefics3-8B-Llama3"
-DATA="/data/pandayin/data/idefics-10k-sharegem-10k-vidgpt-10k-fake_vid.json"
+DATA="/data/pandayin/data/idefics-mix-data-30k.json"
 MODEL_MAX_Length=131072 
 
 DISTRIBUTED_ARGS="

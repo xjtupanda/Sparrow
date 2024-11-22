@@ -154,7 +154,7 @@ def exact_match_and_llm(model, tokenizer, question, option_str, prediction):
     ]
     for answer_prefix in answer_prefixes:
         prediction = prediction.replace(answer_prefix, "").strip()
-    # first try exact matching, if failed, try gpt matching.
+    # first try exact matching, if failed, try llm matching.
     matches = re.search(r'[ABCD]\.', prediction)
     if matches is not None:
         return matches[0].strip('.')
@@ -177,11 +177,6 @@ def exact_match_and_llm(model, tokenizer, question, option_str, prediction):
         except Exception as e:
             print(f"Error: {e}")
     
-    # response_message = ' '.join(response_message.split(' ')[-5:])
-    # matches = re.search(r'[ABCD]', response_message)
-    # if matches is not None:
-    #     return matches[0]
-    # fail in both exact matching and gpt-matching. return a placeholder that indicates failure..
     return 'Z'
 
 # Custom dataset class
@@ -241,7 +236,6 @@ def run_inference(args):
     data_loader = create_data_loader(predictions, num_workers=0)
 
     for qs, line in tqdm(zip(data_loader, predictions), total=len(predictions)):
-    # for line in tqdm(predictions, total=len(predictions)):
         idx = line["question_id"]
         cur_prompt = line["prompt"]
         # normalize the question.
@@ -271,7 +265,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # Define the command-line arguments
-    parser.add_argument("--model-path", type=str, default="/data/pandayin/ckpt/Meta-Llama-3.1-8B-Instruct/", help="path to the judge llm.")
+    parser.add_argument("--model-path", type=str, default="meta-llama/Llama-3.1-8B-Instruct/", help="path to the judge llm.")
     parser.add_argument("--pred-file", type=str, required=True, help="The jsonl file containing the questions, answers and model predictions.")
     parser.add_argument("--output-file", type=str, required=True, help="The output jsonl file.")
     parser.add_argument("--num-chunks", type=int, default=1)

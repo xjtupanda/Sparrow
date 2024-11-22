@@ -28,7 +28,7 @@
 🤔 **Thinking: The importance of instruction diversity and how to efficiently improve it.**
 
 - We observed a limited instruction diversity in currently available datasets, which led to downgraded learning efficiency (<ins>More findings are available in our paper</ins>).
-- Since text data could be a rich and economical source, we leveraged these data in a format that was more consistent with video format.
+- Since text data could be a rich and economical source, we leveraged these data in a format that was more consistent with video instruction data.
   
 <p align="center">
     <img src="./assets/idea-illustration.png" width="75%" height="75%">

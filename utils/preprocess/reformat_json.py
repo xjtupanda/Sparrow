@@ -40,13 +40,6 @@ def write_json(path, data):
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
 
-def count_video(conv):
-    counter = 0
-    for rou in conv:
-        counter += rou['value'].count("<video>")
-    return counter
-
-
 base_dir = "/data/pandayin/data/video_data/extracted_frames"
 json_data = read_jsonl("video-chatgpt-clean.jsonl")
 

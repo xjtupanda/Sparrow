@@ -2,7 +2,7 @@
 
 ### Dataset Download
 | Data file | Sample size |
-|---|---:|
+|:---|---:|
 | [VideoInstruct100K.json](https://huggingface.co/datasets/MBZUAI/VideoInstruct-100K/blob/main/VideoInstruct100K.json) | 100K |
 | [sharegemini_webvid_core100k.json](https://huggingface.co/datasets/Share14/ShareGemini/blob/main/sharegemini_webvid_core100k.json) | 100K |
 | [longalpaca_chat_fake_vid.json](https://huggingface.co/datasets/xjtupanda/T2Vid-Synthetic/blob/main/longalpaca_chat_fake_vid.json) | 9K |
@@ -12,7 +12,7 @@ The first two are released by Video-ChatGPT and ShareGemini, respectively. The l
 
 We also provide the jsonl files of the first two video datasets arranged by us:
 | Data file | Baidu netdisk | Google drive |
-|---|---:|---:|
+|:---|---:|---:|
 | video-chatgpt.jsonl | [Link](https://pan.baidu.com/s/1pNvNfa7kNzQFHZRZzsk4Lg?pwd=y9bn) | [Link](https://drive.google.com/file/d/1VCaLABDxa-Myri71mJY7bCcEgCKqYdBz/view?usp=share_link) |
 | sharegemini_webvid_core100k.jsonl | [Link](https://pan.baidu.com/s/1H4tqPIY8I1oOhbfPXdSqPA?pwd=vp7g) | [Link](https://drive.google.com/file/d/1_fJd1Z-CQZHzh_jGTvxh4rS0Q7bsmQBc/view?usp=share_link) |
 

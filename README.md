@@ -9,7 +9,7 @@
         🤗 <a href="https://huggingface.co/collections/xjtupanda/t2vid-673f104cdaf4ac3340b15964">Hugging Face</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/pdf/24xx.xxxxx">Paper</a> &nbsp&nbsp  </a>
 </p>
 
-**TL;DR:** *We proposed a data augmentation method to enrich the instruction diversity of video data, which facilitates more efficient training without compromising performance.*
+**TL;DR:** *We proposed a data augmentation method (synthesize "video" samples from long QA text data) to enrich the instruction diversity of video data, which facilitates more efficient training without compromising performance.*
 
 ## :sparkles: Highlights
 :rocket: **Train less, achieve more:** By mixing in our synthetic data, one can achieve comparable or better performance, while the total training sample size is only **15%**.
@@ -53,9 +53,11 @@ pip install -U flash-attn --no-build-isolation
 The instructions on training and evaluation (*including pre-trained weights*) are in [TRAIN.md](docs/TRAIN.md) and [EVAL.md](docs/EVAL.md).
 
 ## 📖  Misc
-For those interested in:
-- How to translate text into images? Check `utils/text-to-images/draw_text_multi_image_multi_proc.py`
-- How to visualize the distribution of instructions? Check `utils/draw_text_multi_image_multi_proc.py`
+For those interested in the implementation details of our paper:
+- How to translate text into images? Check [t2vid.py](https://github.com/xjtupanda/T2Vid/blob/main/utils/text-to-images/t2vid.py).
+- How to visualize the distribution of instructions? 
+  - Calculate embeddings and perform dimensionality reduction for instructions: [calc_inst_embeddings.py](https://github.com/xjtupanda/T2Vid/blob/main/utils/visualization/calc_inst_embeddings.py).
+  - Draw plots: [vis-tsne.ipynb](https://github.com/xjtupanda/T2Vid/blob/main/utils/visualization/vis-tsne.ipynb).
 
 
 ## 🙌 Related Projects

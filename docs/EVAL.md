@@ -37,11 +37,11 @@ Run the scripts `run_bench.sh` to evaluate on the three benchmarks, in `Idefics3
 Usage:
 ```Shell
 cd Idefics3/eval/
-sh run_bench.sh {exp_name} {CKPT_file_path} {NUM_FRAMES}
+bash run_bench.sh {exp_name} {CKPT_file_path} {NUM_FRAMES}
 ```
 For example, running `zero-shot` inference with the original image-LLM `Idefics3`, using `24` frames:
 ```Shell
-sh run_bench.sh zero-shot HuggingFaceM4/Idefics3-8B-Llama3 24
+bash run_bench.sh zero-shot HuggingFaceM4/Idefics3-8B-Llama3 24
 ```
 
 We provide fine-tuned weights in our [Hugging Face collection](https://huggingface.co/collections/xjtupanda/t2vid-673f104cdaf4ac3340b15964).

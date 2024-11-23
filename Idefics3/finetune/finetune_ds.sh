@@ -50,7 +50,7 @@ torchrun $DISTRIBUTED_ARGS finetune.py  \
     --per_device_train_batch_size 2 \
     --gradient_accumulation_steps 4 \
     --save_strategy "steps" \
-    --save_only_model True \
+    --save_only_model true \
     --save_steps 9999 \
     --save_total_limit 1 \
     --learning_rate 5e-6 \

@@ -84,5 +84,5 @@ Run the scripts
 For example, to fine-tune Idefics3 on 30K mix data, run:
 ```Shell
 cd Idefics3/finetune/
-sh finetune_ds.sh
+bash finetune_ds.sh
 ```

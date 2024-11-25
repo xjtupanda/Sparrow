@@ -2,7 +2,7 @@
 
 
 <p align="center">
-    <img src="./assets/icon.png" width="300"/>
+    <img src="./assets/icon.png" width="250"/>
 <p>
 
 <p align="center">
@@ -11,8 +11,8 @@
 
 **TL;DR:** *We proposed a data augmentation method (synthesize "video" samples from long QA text data) to enrich the instruction diversity of video data, which facilitates more efficient training with comparable performance.*
 
-## :sparkles: Highlights
-:rocket: **Train less, achieve more:** By mixing in our synthetic data, one can achieve comparable or better performance, while the total training sample size is only **15%**.
+## ✨ Highlights
+🚀 **Train less, achieve more:** By mixing in our synthetic data, one can achieve comparable or better performance, while the total training sample size is only **15%**.
 |  | Video-MME | MVBench | TempCompass |
 | :--- | :---: | :---: | :---: |
 | MiniCPM-V-2.5-8B<br><sub>zero-shot</sub> | 48.2 | 42.9 | 49.1 |

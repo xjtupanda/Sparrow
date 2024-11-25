@@ -70,7 +70,7 @@ For those interested in the implementation details of our paper:
 
 ## 🖋️ Citation
 
-If you find our project, please consider citing our paper:
+If you find our project useful, please consider citing our paper:
 ```
 @article{yin2024t2vid,
   title={},

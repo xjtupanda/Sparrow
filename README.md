@@ -2,7 +2,7 @@
 
 
 <p align="center">
-    <img src="./assets/icon.png" width="250"/>
+    <img src="https://s21.ax1x.com/2024/11/25/pAhrS9s.png" width="250"/>
 <p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 - Since text data could be a rich and economical source, we leveraged these data in a format that was more consistent with video instruction data.
   
 <p align="center">
-    <img src="./assets/idea-illustration.png" width="75%" height="75%">
+    <img src="https://s21.ax1x.com/2024/11/25/pAhyPTU.png" width="75%" height="75%">
 </p>
 
 

@@ -12,6 +12,19 @@
 **TL;DR:** *We proposed a data augmentation method (synthesize "video" samples from long QA text data) to enrich the instruction diversity of video data, which facilitates more efficient training with comparable performance.*
 
 ## ✨ Highlights
+
+🤔 **Motivation:** The importance of instruction diversity and how to efficiently improve it.
+
+- We observed a limited instruction diversity in currently available datasets, which led to low learning efficiency (<ins>More details and findings are available in our paper</ins>).
+- Since text data could be a rich and economical source, we leveraged these data in a format that was more consistent with video instruction data.
+  
+<p align="center">
+    <img src="./assets/idea-illustration.png" width="75%" height="75%">
+</p>
+
+
+***
+
 🚀 **Train less, achieve more:** By mixing in our synthetic data, one can achieve comparable or better performance, while the total training sample size is only **15%**.
 |  | Video-MME | MVBench | TempCompass |
 | :--- | :---: | :---: | :---: |
@@ -22,17 +35,6 @@
 | Idefics3-8B<br><sub>zero-shot</sub> | 51.2 | 49.6 | 55.9 |
 | Idefics3-8B<br><sub>200K video data</sub> | 53.3 | 50.7 | **62.9** |
 | **Idefics3-8B<br><sub>20K video data +  10K synthetic data</sub>** | **56.3** | **51.6** | 62.3 |
-
-***
-
-🤔 **Thinking: The importance of instruction diversity and how to efficiently improve it.**
-
-- We observed a limited instruction diversity in currently available datasets, which led to low learning efficiency (<ins>More findings are available in our paper</ins>).
-- Since text data could be a rich and economical source, we leveraged these data in a format that was more consistent with video instruction data.
-  
-<p align="center">
-    <img src="./assets/idea-illustration.png" width="75%" height="75%">
-</p>
 
 ## 🛠️ Quick Setup
 

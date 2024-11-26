@@ -13,7 +13,7 @@
 
 ## ✨ Highlights
 
-🤔 **Main Findings:** The importance of instruction diversity in video fine-tuning and how to efficiently improve it.
+🤔 **Main findings:** The importance of instruction diversity in video fine-tuning and how to efficiently improve it.
 
 - We observed a limited instruction diversity in datasets developed for Video-LLMs, which led to low learning efficiency (<ins>More details and findings are available in our paper</ins>).
 - Since text data could be a rich and economical source, we leveraged these data in a format that was more consistent with video instruction data.

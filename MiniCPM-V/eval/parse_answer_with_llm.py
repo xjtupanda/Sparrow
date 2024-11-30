@@ -155,10 +155,10 @@ def exact_match_and_llm(model, tokenizer, question, option_str, prediction):
     for answer_prefix in answer_prefixes:
         prediction = prediction.replace(answer_prefix, "").strip()
     # first try exact matching, if failed, try llm matching.
-    matches = re.search(r'[ABCD]\.', prediction)
+    matches = re.search(r'[ABCDE]\.', prediction)
     if matches is not None:
         return matches[0].strip('.')
-    matches = re.search(r'[ABCD]', prediction)
+    matches = re.search(r'[ABCDE]', prediction)
     if matches is not None:
         return matches[0]
 

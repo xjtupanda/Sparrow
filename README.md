@@ -6,7 +6,7 @@
 <p>
 
 <p align="center">
-       &nbsp&nbsp 📑 <a href="https://arxiv.org/pdf/24xx.xxxxx">Paper</a> &nbsp&nbsp  </a> |  &nbsp&nbsp 🤗 <a href="https://huggingface.co/collections/xjtupanda/t2vid-673f104cdaf4ac3340b15964">Hugging Face</a>&nbsp&nbsp 
+       &nbsp&nbsp 📑 <a href="https://arxiv.org/pdf/2411.19951">Paper</a> &nbsp&nbsp  </a> |  &nbsp&nbsp 🤗 <a href="https://huggingface.co/collections/xjtupanda/t2vid-673f104cdaf4ac3340b15964">Hugging Face</a>&nbsp&nbsp 
 </p>
 
 **TL;DR:** *We proposed a data augmentation method (synthesize "video" samples from long QA text data) to enrich the instruction diversity of video data, which facilitates more efficient training with comparable performance.*
@@ -75,9 +75,9 @@ For those interested in the implementation details of our paper:
 If you find our project useful, please consider citing our paper:
 ```
 @article{yin2024t2vid,
-  title={},
-  author={},
-  journal={},
+  title={T2Vid: Translating Long Text into Multi-Image is the Catalyst for Video-LLMs},
+  author={Yin, Shukang and Fu, Chaoyou and Zhao, Sirui and Shen, Yunhang and Ge, Chunjiang and Yang, Yan and Long, Zuwei and Dai, Yuhan and Xu, Tong and Sun, Xing and others},
+  journal={arXiv preprint arXiv:2411.19951},
   year={2024}
 }
 ```

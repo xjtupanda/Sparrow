@@ -1,8 +1,8 @@
 import json
 import os
-import numpy as np
 from tqdm import tqdm
 from transformers import AutoTokenizer
+from glob import glob
 
 def read_jsonl(path):
     with open(path, 'r') as f:
@@ -49,6 +49,7 @@ counter = []
 for sample in tqdm(orig_data):
     video_dir = os.path.join(video_base_dir, os.path.splitext(sample['video'])[0])
     if not os.path.exists(video_dir): continue
+    video_frame_list = sorted(glob(os.path.join(video_dir, '*')))
     frame_count = len(os.listdir(video_dir))
     # filter according to frame length
     if frame_count > 90: continue
@@ -65,11 +66,40 @@ for sample in tqdm(orig_data):
 
     # filter according to token length
     if token_length > 8192: continue 
-    sample['set'] = "LongQLoRA"
-    sample['conversations'][0]['value'] = sample['conversations'][0]['value'].replace('<video>', '<image>')
-    sample['image'] = [os.path.join(sample['video'], pic) for pic in sorted(os.listdir(video_dir))]
-    del(sample['video'])
-    new_data.append(sample)
+
+    prefix_prompt = ""
+    image_mapping_dict = {}
+    for idx in range(frame_count):
+        prefix_prompt += f"<image_{idx:02d}>" + '\n'
+        image_mapping_dict[f"<image_{idx:02d}>"] = video_frame_list[idx]
+
+    sample['conversations'][0]['value'] = sample['conversations'][0]['value'].replace('<video>', '').strip()
+    sample['conversations'][0]['value'] = prefix_prompt + sample['conversations'][0]['value']
+
+    new_convs = []
+    for idx, rou in enumerate(sample['conversations']):
+        if idx % 2 == 0:
+            new_convs.append(
+                {
+                    'role': 'user',
+                    'content': rou['value']
+                }
+            )
+        else:
+            new_convs.append(
+                {
+                    'role': 'assistant',
+                    'content': rou['value']
+                }
+            )
+
+    counter.append(frame_count)
+    new_data.append(
+        {
+        'image': image_mapping_dict,
+        'conversations': new_convs
+        }
+    )
 
 
 print("After fiter sample number:", len(new_data))

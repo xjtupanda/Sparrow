@@ -1,8 +1,7 @@
 import json
 import os
-import numpy as np
 from tqdm import tqdm
-from transformers import AutoTokenizer, AutoProcessor
+from transformers import AutoProcessor
 from glob import glob
 def read_jsonl(path):
     with open(path, 'r') as f:

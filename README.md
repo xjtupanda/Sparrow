@@ -1,9 +1,8 @@
-# T2Vid: Efficient Video Fine-tuning Scheme for MLLMs
 
-
-<p align="center">
+<h1 align="center">
     <img src="https://s21.ax1x.com/2024/11/25/pAhrS9s.png" width="250"/>
-<p>
+<br>T2Vid: Efficient Video Fine-tuning Scheme for MLLMs</br>
+</h1>
 
 <p align="center">
        &nbsp&nbsp 📑 <a href="https://arxiv.org/pdf/2411.19951">Paper</a> &nbsp&nbsp  </a> |  &nbsp&nbsp 🤗 <a href="https://huggingface.co/collections/xjtupanda/t2vid-673f104cdaf4ac3340b15964">Hugging Face</a>&nbsp&nbsp 

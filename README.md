@@ -1,7 +1,7 @@
 
 <h1 align="center">
     <img src="https://s21.ax1x.com/2024/11/25/pAhrS9s.png" width="220"/>
-<br>T2Vid: Efficient Video Fine-tuning Scheme for MLLMs</br>
+<br> T2Vid: Efficient Video Fine-tuning Scheme for MLLMs
 </h1>
 
 <p align="center">

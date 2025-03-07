@@ -20,7 +20,7 @@
 
 ## 📖  Implementation & Examples
 For those interested in the implementation details and some real synthetic examples of our paper:
-- How to translate text into images? Check `utils/t2vid.py`.
+- How to translate text into images? Check `t2vid.py`.
 - Synthetic images. Check `samples/` directory of this repo.
 
 

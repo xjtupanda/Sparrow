@@ -12,6 +12,6 @@
 
 ## 🚨 Note
 
-This repo has been moved to the the new [link](https://github.com/VITA-MLLM/Sparrow).
+This repo has been moved to a new [link](https://github.com/VITA-MLLM/Sparrow).
 
 
